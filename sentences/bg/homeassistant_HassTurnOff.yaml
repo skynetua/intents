@@ -1,0 +1,6 @@
+language: bg
+intents:
+  HassTurnOff:
+    data:
+      - sentences:
+          - "<turn_off> <name>"

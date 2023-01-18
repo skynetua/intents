@@ -2,7 +2,8 @@ language: ro
 intents:
   HassTurnOff:
     data:
-    - sentences: []
-      slots:
-        domain: light
-        name: all
+      - sentences:
+          - "<opreste> [toate] <lumina> [<din>] <area>"
+          - "<opreste> [<din>] <area> [toate] <lumina>"
+        slots:
+          domain: "light"

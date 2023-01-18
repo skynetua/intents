@@ -7,15 +7,16 @@ tests:
     intent:
       name: "HassLightSet"
       slots:
-        brightness_pct: 50
+        brightness: 50
         area: "bedroom"
+        name: all
   - sentences:
       - "Zmień jasność lampki nocnej na 50%"
       - "Ustaw lampkę nocną na 50 procent"
     intent:
       name: "HassLightSet"
       slots:
-        brightness_pct: 50
+        brightness: 50
         name: light.bedroom_lamp
   # color
   - sentences:
@@ -26,3 +27,11 @@ tests:
       slots:
         color: "red"
         name: "light.bedroom_lamp"
+  - sentences:
+      - "Zmień wszystkie kolory w łazience na białe"
+      - "Zmień kolory w łazience na białe"
+    intent:
+      name: "HassLightSet"
+      slots:
+        color: "white"
+        area: "bathroom"

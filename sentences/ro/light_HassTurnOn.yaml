@@ -2,7 +2,8 @@ language: ro
 intents:
   HassTurnOn:
     data:
-    - sentences: []
-      slots:
-        domain: light
-        name: all
+      - sentences:
+          - "<porneste> [toate] <lumina> [<din>] <area>"
+          - "<porneste> [<din>] <area> [toate] <lumina>"
+        slots:
+          domain: "light"

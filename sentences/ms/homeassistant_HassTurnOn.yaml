@@ -1,0 +1,6 @@
+language: ms
+intents:
+  HassTurnOn:
+    data:
+      - sentences:
+          - "<imp_hidup> <nama>"

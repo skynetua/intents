@@ -1,5 +1,10 @@
-language: it
+language: "it"
 intents:
   HassClimateSetTemperature:
     data:
-    - sentences: []
+      - sentences:
+          - "<set> <temp> a <temperature>"
+          - "<set> [<temp>] [<in>] <area> [a] <temperature>"
+          - "<set> [<temp>] [di] <temperature> [<in>] <area>"
+          - "<set> [<in>] <area> [<temp>] [di] <temperature>"
+          - "<set> <temp> <area> [a] <temperature>"

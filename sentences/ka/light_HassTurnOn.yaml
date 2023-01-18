@@ -1,0 +1,11 @@
+language: ka
+intents:
+  HassTurnOn:
+    data:
+      - sentences:
+          - "<turn_on> <area>[ს|ში]"
+          - "<turn_on> [ ყველგან | <area>[ს|ში] ] [ ყველაფერი | [ყველა] ( განათება | ნათურა | შუქი ) ]"
+          - "<turn_on> [ ყველაფერი | [ყველა] ( განათება | ნათურა | შუქი ) ] [ ყველგან | <area>[ს|ში] ]"
+        slots:
+          domain: light
+          name: all

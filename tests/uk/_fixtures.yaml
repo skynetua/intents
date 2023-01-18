@@ -2,7 +2,7 @@ language: uk
 areas:
 - name: Кухн(я|і)
   id: kitchen
-- name: Гостинн(а|ій)
+- name: Вітальн(я|і)
   id: living_room
 - name: Спальн(я|і)
   id: bedroom
@@ -23,4 +23,7 @@ entities:
   area: garage
 - name: Кондиціонер
   id: climate.ac
+  area: living_room
+- name: Лів(а|у) штор(а|у)
+  id: cover.curtain_left
   area: living_room

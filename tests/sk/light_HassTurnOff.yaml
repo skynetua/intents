@@ -1,6 +1,38 @@
-language: sk
+language: "sk"
 tests:
-- sentences: []
-  intent:
-    name: HassTurnOff
-    slots: {}
+  - sentences:
+      - "vypni všetky svetlá v kuchyni"
+      - "vypni svetlá v kuchyni"
+      - "vypni osvetlenie v kuchyni"
+      - "vypni svetlo v kuchyni"
+      - "zahas všetky svetlá v kuchyni"
+      - "zahas svetlá v kuchyni"
+      - "zahas osvetlenie v kuchyni"
+      - "zahas svetlo v kuchyni"
+      - "zhasni všetky svetlá v kuchyni"
+      - "zhasni svetlá v kuchyni"
+      - "zhasni osvetlenie v kuchyni"
+      - "zhasni svetlo v kuchyni"
+    intent:
+      name: "HassTurnOff"
+      slots:
+        area: "kitchen"
+        domain: "light"
+  - sentences:
+      - "zhasni svetlo pred vchodom"
+      - "zhasni pred vchodom"
+      - "zhasni vo vchode"
+      - "zhasni vchod"
+    intent:
+      name: "HassTurnOff"
+      slots:
+        area: entrance
+        domain: light
+  - sentences:
+      - "zhasni na chodbe"
+      - "zhasni chodbu"
+    intent:
+      name: "HassTurnOff"
+      slots:
+        area: hallway
+        domain: light

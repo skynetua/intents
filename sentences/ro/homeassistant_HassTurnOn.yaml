@@ -2,4 +2,10 @@ language: ro
 intents:
   HassTurnOn:
     data:
-    - sentences: []
+      - sentences:
+          - "<porneste> <name>"
+        excludes_context:
+          domain:
+            - cover
+            - fan
+

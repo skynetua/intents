@@ -1,5 +1,9 @@
-language: sk
+language: "sk"
 intents:
   HassClimateGetTemperature:
     data:
-    - sentences: []
+      - sentences:
+          - "<what_is> <temp> [je] (v | na) <area>"
+          - "<how_many> stupňov [je] (v | na) <area>"
+          - "<how_many> stupňov"
+          - "<what_is> <temp>"

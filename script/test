@@ -15,4 +15,5 @@ if [ -d "${venv}" ]; then
     source "${venv}/bin/activate"
 fi
 
-pytest -vv "${base_dir}/tests"
+python3 -m script.intentfest validate
+pytest -vv
